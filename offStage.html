@@ -1,0 +1,2757 @@
+<!--
+Author: Mohammed Hisam
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>kalasmi 2023-24</title>
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style>
+
+        @font-face {
+            font-family: kalasmiFont;
+            src: url('./assets/fonts/kalasmi.ttf') format("truetype");
+        }
+
+        .kalasmi {
+            font-family: kalasmiFont;
+        }
+
+        .collapsible {
+            /*background-color: #eee;*/
+            /*color: #444;*/
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            /*text-align: left;*/
+            outline: none;
+            font-size: 1.2rem;
+            border-radius: 1rem;
+        }
+
+        .active2, .collapsible:hover {
+            color: #02697e;
+        }
+
+        .content {
+            /*padding: 0 18px;*/
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            /*background-color: #f1f1f1;*/
+        }
+
+        .progress-outer {
+            background: #fff;
+            border-radius: 50px;
+            padding: 25px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(209, 219, 231, 0.7);
+        }
+
+        .progress {
+            height: 27px;
+            margin: 0;
+            overflow: visible;
+            border-radius: 50px;
+            background: #eaedf3;
+            box-shadow: inset 0 10px 10px rgba(244, 245, 250, 0.9);
+        }
+
+        .progress .progress-bar {
+            border-radius: 50px;
+        }
+
+        .progress .progress-value {
+            position: relative;
+            /*left: -100px;*/
+            /*top: 4px;*/
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 2px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .progress-bar.active {
+            animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 2s;
+        }
+
+        @-webkit-keyframes animate-positive {
+            0% {
+                width: 0%;
+            }
+        }
+
+        @keyframes animate-positive {
+            0% {
+                width: 0%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+            <h1>
+                <a class="navbar-brand kalasmi" href="index.html">
+                    <img class="img-fluid" width="45" src="assets/images/logo.png" alt=" ">Iemkvan
+                </a>
+            </h1>
+            <!-- if logo is image enable this
+<a class="navbar-brand" href="#index.html">
+    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+</a> -->
+            <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="onStage.html">On Stage</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="offStage.html">Off Stage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- toggle switch for light and dark theme -->
+            <div class="cont-ser-position" style="margin-top: 10px;">
+                <nav class="navigation">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            <!-- //toggle switch for light and dark theme -->
+        </nav>
+    </div>
+</header>
+<!--//header-->
+<!-- inner banner -->
+<div class="inner-banner">
+    <section class="w3l-breadcrumb">
+        <div class="container">
+            <h4 class="inner-text-title font-weight-bold mb-sm-3 mb-2">Off Stage Result</h4>
+            <ul class="breadcrumbs-custom-path">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Off Stage</li>
+            </ul>
+        </div>
+    </section>
+</div>
+<!-- //inner banner -->
+
+
+<!-- banner bottom section -->
+<div class="w3l-index-block4">
+    <div class="features-bg">
+
+        <!-- OffStage Scoreboard -->
+        <div class="container">
+            <h4 class="inner-text-title font-weight-bold mb-sm-3 mb-2 mt-2 text-center">Off Stage Scoreboard</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <!-- Phoenix Scoreboard -->
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                 style="width:52%; box-shadow:-1px 10px 10px rgba(116, 195, 116,0.7); background-color:#74C374;">
+                                <div class="progress-value">Phoenix:104</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Phoenix Scoreboard -->
+
+
+                    <!-- Falcons Scoreboard -->
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                                 style="width:38%; box-shadow:-1px 10px 10px rgba(240, 173, 78,0.7); background-color:#F0AD4E;">
+                                <div class="progress-value">Falcons:79</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- //Falcons Scoreboard -->
+
+                    <!-- Warriors Scoreboard -->
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                                 style="width:12%; box-shadow:-1px 10px 10px rgba(240,51,50,0.7); background-color:#F03332;">
+                                <div class="progress-value">Warriors:25</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- //Warriors Scoreboard -->
+
+                    <!-- Titans Scoreboard -->
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                 style="width:10%; box-shadow:-1px 10px 10px rgba(91, 192, 222, 0.7); background-color:#5BC0DE;  ">
+                                <div class="progress-value">Titans:21</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- //Titans Scoreboard -->
+                </div>
+            </div>
+        </div>
+        <!-- //OffStage Scoreboard -->
+
+        <h4 class="inner-text-title font-weight-bold mb-sm-3 mb-2 mt-5 text-center">Off Stage Items Results</h4>
+
+
+        <!-- Desertation Samskrtham -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Dissertation Samskrutam
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Emerald</h6>
+                                <h4>Jeny</h4>
+                                <p>Electronics 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Ajishna CP</h4>
+                                <p>Psychology 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+            </div>
+        </div>
+        <!-- //Desertation Samskrtham -->
+
+        <!-- Desertation Malayalam -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Dissertation Malayalam
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Titans</h6>
+                                <h4>Sithwa</h4>
+                                <p>Economics 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Titans</h6>
+                                <h4>Mahliya Misri PT</h4>
+                                <p>Bcom CA 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Warriors</h6>
+                                <h4>Mahshook</h4>
+                                <p>Electronics 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- //Desertation Malayalam -->
+
+        <!-- Embroidary -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Embroidery
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Fathima Rifa k</h4>
+                                <p>BA English 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Titans</h6>
+                                <h4>Najiya</h4>
+                                <p>Bcom CA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Shahana Nesrin</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Embroidary -->
+
+        <!-- Dissertation  Writing English -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Dissertation Writing English
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Ahla Muhammed Yoosuf</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Muhammed Ibrahim Arshad</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Thalseer Muhammed Althaf</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Dissertation Writing English -->
+
+        <!-- Poetry Writing English -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Poetry Writing English
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Jusna</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Muhammed Zinan K</h4>
+                                <p>BA English 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Thalseer Muhammed Althaf VK</h4>
+                                <p>BA English 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Poetry Writing English -->
+
+        <!-- Short Story Writing English -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Short Story Writing English
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Safna</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Ahla Muhammed Yosuf</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Thalseer Muhammed Yosuf</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+
+            </div>
+        </div>
+        <!-- //Short Story Writing English -->
+
+        <!-- Collage -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Collage
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcon</h6>
+                                <h4>Shahana</h4>
+                                <p></p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Falcon</h6>
+                                <h4>Ajna</h4>
+                                <p></p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Falcon</h6>
+                                <h4>Hudha Mariyam</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Nadha Karadan</h4>
+                                <p></p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Safwana</h4>
+                                <p></p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Najiya</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Mubashira</h4>
+                                <p></p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Suniya MK</h4>
+                                <p></p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Raniya KC</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Collage -->
+
+        <!-- Poster Drawing -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Poster Drawing
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Warriors</h6>
+                                <h4>Munshida PK</h4>
+                                <p>Electronics 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Ummu salma</h4>
+                                <p>English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Safwana</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Poster Drawing -->
+
+        <!-- Cartoon Drawing -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Cartoon Drawing
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Titans</h6>
+                                <h4>Diya Sherin</h4>
+                                <p>Economics 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Prabin</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Safwana</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Cartoon Drawing -->
+
+        <!-- Oil Painting -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Oil Painting
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Safwana</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Fathima Rifa K</h4>
+                                <p>BA English 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Nadha Karadan</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Oil Painting -->
+
+        <!-- Pencil Drawing -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Pencil Drawing
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Ummu Salma</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Fathima Noora K</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Fathima Rifa</h4>
+                                <p>BA English 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Pencil Drawing -->
+
+        <!-- Watercolor Painting -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Watercolor Painting
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Fathima Noora K</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Fathima Rifa</h4>
+                                <p>BA English 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Safwana</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Watercolor Painting -->
+
+        <!-- Dissertation  Writing Urdu -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Dissertation Writing Urdu
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Farhana</h4>
+                                <p>BCA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Asla</h4>
+                                <p>Psychology</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Muhammed Ameen</h4>
+                                <p>BCom CA</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Dissertation Writing Urdu -->
+
+        <!-- Dissertation  Writing Hindi -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Dissertation Writing Hindi
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Nouf Bind Nazer</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Titans</h6>
+                                <h4>Najiya</h4>
+                                <p>Bcom CA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Titans</h6>
+                                <h4>Sayana</h4>
+                                <p>Bcom CA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Dissertation Writing Hindi -->
+
+        <!-- Dissertation  Writing Arabic -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Dissertation Writing Arabic
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Jumana Sherin VP</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Ansaba</h4>
+                                <p>Bcom TT 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Thanveera</h4>
+                                <p>BCA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Dissertation Writing Arabic -->
+
+        <!-- Short Story Writing Urdu -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Short Story Writing Urdu
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Mansoora</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Majidha</h4>
+                                <p>BA English 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Fathima V</h4>
+                                <p>BCom CA</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Fathima Nihala</h4>
+                                <p>BCA 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Short Story Writing Urdu -->
+
+        <!-- Short Story Writing Malayalam -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Short Story Writing Malayalam
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Noushana Shanu</h4>
+                                <p>Psychology</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Jumana Sherin</h4>
+                                <p>BA English</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Rumailath</h4>
+                                <p>BCA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Short Story Writing Malayalam -->
+
+        <!-- Short Story Writing Arabic -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Short Story Writing Arabic
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Sameeha</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Safeedha</h4>
+                                <p>Multimedia 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Jumana Sherin VP</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Short Story Writing Arabic -->
+
+        <!-- Short Story Writing Hindi -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Short Story Writing Hindi
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Nouf Bind Nazer</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Warriors</h6>
+                                <h4>Noura</h4>
+                                <p>Psychology 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Vishnu Laju</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Short Story Writing Hindi -->
+
+        <!-- Poetry Writing Urdu -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Poetry Writing Urdu
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Basima KK</h4>
+                                <p>BCA 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Mansoora</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Topaz</h6>
+                                <h4>Majidha</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Poetry Writing Urdu -->
+
+        <!-- Poetry Writing Arabic -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Poetry Writing Arabic
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Salman KP</h4>
+                                <p>BCA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Jumana Sherin VP</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Sameeha MK</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Poetry Writing Arabic -->
+
+        <!-- Poetry Writing Malayalam -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Poetry Writing Malayalam
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Warriors</h6>
+                                <h4>Nandana AP</h4>
+                                <p>Psychology 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Krishnapriya</h4>
+                                <p>BA English 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Warriors</h6>
+                                <h4>Shifa</h4>
+                                <p>Electronics 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Poetry Writing Malayalam -->
+
+        <!-- Poetry Writing Hindi -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Poetry Writing Hindi
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Nouf Bind Nasar</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Ayisha</h4>
+                                <p>BCom TT 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Titans</h6>
+                                <h4>FAthima Rinsha K</h4>
+                                <p>Economics 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Poetry Writing Hindi -->
+
+        <!-- Akshara Slogam -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">അക്ഷരശ്ളോകം
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Nandana</h4>
+                                <p>Psychology 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Ajishna</h4>
+                                <p>Psychology 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+            </div>
+        </div>
+        <!-- //Akshara Slogam -->
+
+        <!-- Clay Modeling -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Clay Modeling
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Rania KC</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Mubashira</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div hidden class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Ramees</h4>
+                                <p>Multimedia 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Clay Modeling -->
+
+        <!-- Speech Malayalam -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Speech Malayalam
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Salman</h4>
+                                <p>BCA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Bareera banu</h4>
+                                <p>Multimedia 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <!-- <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Bareera banu</h4>
+                                <p>BA Multimedia 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+                <!-- //3rd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Harshad KT</h4>
+                                <p>BCom TT 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Speech Malayalam -->
+
+        <!-- Speech English -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Speech English
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Warriors</h6>
+                                <h4>Afida</h4>
+                                <p>Psychology 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Thaiseer</h4>
+                                <p>BA English 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Dihya zaman</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Speech English -->
+
+        <!-- Speech Arabic -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Speech Arabic
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Salman</h4>
+                                <p>BCA 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Salim</h4>
+                                <p>BCom CA 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+            </div>
+        </div>
+        <!-- //Speech Arabic -->
+
+        <!-- Speech Hindi -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Speech Hindi
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Vishnu Laju</h4>
+                                <p>Multimedia 1st Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Fathima Rinsha KT</h4>
+                                <p>BA English 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Basima</h4>
+                                <p>BCA 2nd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Speech Hindi -->
+
+        <!-- Speech Tamil -->
+        <div hidden class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Speech Tamil
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Mohammed Uvais P</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Malavika</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Aflah Abdul Azeez</h4>
+                                <p>Bcom CA 3rd Year</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Speech Tamil -->
+
+        <!-- Quiz -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Quiz
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Sameeha</h4>
+                                <p>BCA 1st Year</p>
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Fiya</h4>
+                                <p>BCA 1st Year</p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Saja</h4>
+                                <p>BCA 1st Year</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Shibil</h4>
+                                <p>Bcom.TT 3rd Year</p>
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Riyas</h4>
+                                <p>Multimedia 3rd Year</p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Fidha Saleem</h4>
+                                <p>Multimedia</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Sehir</h4>
+                                <p>Bcom.TT</p>
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Fathima Shibla</h4>
+                                <p>Psychology</p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Fidha</h4>
+                                <p>Psychology</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Quiz -->
+
+        <!-- Rangoli -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">രംഗോളി
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Rania & team</h4>
+                                <!-- <p>Electronics 1st Year</p> -->
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Emerald</h6>
+                                <h4>Rinshida</h4>
+                                <p>Electronics 2nd Year</p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Emerald</h6>
+                                <h4>Sajitha</h4>
+                                <p>Electronics 2nd Year</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Ayisha & team</h4>
+                                <!-- <p>BBA 2nd Year</p> -->
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Emerald</h6>
+                                <h4>Gopika</h4>
+                                <p>BBA 2nd Year</p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Emerald</h6>
+                                <h4>Anagha</h4>
+                                <p>BBA 2nd Year</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Ummu salma & team</h4>
+                                <!-- <p>Multimedia 2nd Year</p> -->
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Raniya</h4>
+                                <p>Multimedia 2nd Year</p>
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Citrine</h6>
+                                <h4>Mubashira</h4>
+                                <p>Multimedia 2nd Year</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Rangoli -->
+
+        <!-- Debate -->
+        <div class="container" style="margin-top: 1rem;">
+            <!-- Item Title -->
+            <button class="collapsible inner-text-title font-weight-bold text-center">Debate
+            </button>
+            <!-- //Item Title -->
+            <div class="row content">
+                <!-- 1st Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/first.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Salman & Farhan</h4>
+                                <!-- <p>BBA 1st Year</p> -->
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Emerald</h6>
+                                <h4>Mohammed Rahees</h4>
+                                <p>Electronics 2nd Year</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //1st Prize -->
+
+                <!-- 2nd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center ">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/second.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Falcons</h6>
+                                <h4>Jusna & Rahees</h4>
+                                <!-- <p>Multimedia 3rd Year</p> -->
+                            </div>
+                            <hr>
+                            <div class="features15-para">
+                                <h6>Warriors</h6>
+                                <h4>Sifa & Mahshook</h4>
+                                <!-- <p>Multimedia 3rd Year</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //2nd Prize -->
+
+                <!-- 3rd Prize -->
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="#prize" class="d-flex feature-unit align-items-center">
+                        <div class="col-4">
+                            <div class="features15-info">
+                                <img class="img-fluid" src="assets/images/third.png" alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features15-para">
+                                <h6>Phoenix</h6>
+                                <h4>Afeeha & Safeedha</h4>
+                                <!-- <p>Psychology 3rd Year</p> -->
+                            </div>
+                            <!-- <hr>
+                            <div class="features15-para">
+                                <h6>Sapphire</h6>
+                                <h4>Niha Fathima</h4>
+                                <p>Psychology 3rd Year</p>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <!-- //3rd Prize -->
+            </div>
+        </div>
+        <!-- //Debate -->
+
+    </div>
+</div>
+<!-- //banner bottom section -->
+
+
+<!-- footer -->
+<footer class="w3l-footer-22 position-relative mt-5 pt-5">
+    <!-- copyright -->
+    <div class="copyright-footer text-center">
+        <div class="container">
+            <div class="columns">
+                <p>Design by <a href="https://www.bcamcas.in/"
+                                target="_blank"> Department of Computer Science</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- //copyright -->
+</footer>
+<!-- //footer -->
+
+<!-- Js scripts -->
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-level-up" aria-hidden="true"></span>
+</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- //move top -->
+
+<!-- common jquery plugin -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- //common jquery plugin -->
+
+<!-- theme switch js (light and dark)-->
+<script src="assets/js/theme-change.js"></script>
+<script>
+    function autoType(elementClass, typingSpeed) {
+        var thhis = $(elementClass);
+        thhis.css({
+            "position": "relative",
+            "display": "inline-block"
+        });
+        thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+        thhis = thhis.find(".text-js");
+        var text = thhis.text().trim().split('');
+        var amntOfChars = text.length;
+        var newString = "";
+        thhis.text("|");
+        setTimeout(function () {
+            thhis.css("opacity", 1);
+            thhis.prev().removeAttr("style");
+            thhis.text("");
+            for (var i = 0; i < amntOfChars; i++) {
+                (function (i, char) {
+                    setTimeout(function () {
+                        newString += char;
+                        thhis.text(newString);
+                    }, i * typingSpeed);
+                })(i + 1, text[i]);
+            }
+        }, 1500);
+    }
+
+    $(document).ready(function () {
+        // Now to start autoTyping just call the autoType function with the
+        // class of outer div
+        // The second paramter is the speed between each letter is typed.
+        autoType(".type-js", 200);
+    });
+</script>
+<!-- //theme switch js (light and dark)-->
+
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+        $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+    });
+</script>
+<!-- //magnific popup -->
+
+<!-- MENU-JS -->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!-- //MENU-JS -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- //disable body scroll which navbar is in active -->
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active2");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+<!--bootstrap-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- //bootstrap-->
+<!-- //Js scripts -->
+</body>
+
+</html>
