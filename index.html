@@ -1,0 +1,570 @@
+<!--
+Author: Mohammed Hisam
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kalasmi 2023-24</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <script src="https://kit.fontawesome.com/ff7af6ee1b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+        /** {*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*outline: none;*/
+        /*box-sizing: border-box;*/
+        /*line-height: 1.5;*/
+        /*transition: all .3s ease-in-out;*/
+        /*font-family: "Josefin Sans", Arial;*/
+        /*}*/
+
+        /*body {*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*min-height: 100vh;*/
+        /*flex-wrap: wrap;*/
+        /*background: linear-gradient(to bottom right, #38A3A5, #57CC99, #80ED99);*/
+        /*}*/
+
+        @font-face {
+            font-family: kalasmiFont;
+            src: url('./assets/fonts/kalasmi.ttf') format("truetype");
+        }
+
+        .kalasmi {
+            font-family: kalasmiFont;
+        }
+
+
+        .card {
+            font-family: "Josefin Sans", Arial;
+            min-height: 475px;
+            width: 275px;
+            margin: 2rem;
+            border-radius: 15px;
+            background: #02383C;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card .header {
+            /*display: flex;*/
+            /*justify-content: space-between;*/
+            align-items: center;
+            padding: 2rem;
+            color: #ddd;
+        }
+
+        .card .header .title {
+            font-weight: 300;
+            color: #fff;
+            font-size: 1.17em;
+            text-align: center;
+            font-family: "Josefin Sans", Arial;
+        }
+
+        .one .sort {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 14.1px;
+        }
+
+        .one .sort .day {
+            padding: 0.4rem 1.2rem;
+            margin: 0 0.1rem;
+            cursor: pointer;
+        }
+
+        .one .sort .day.active,
+        .one .sort .day:active {
+            background: rgba(210, 255, 213, 0.3);
+            border-radius: 25px;
+        }
+
+        ::selection {
+            background: rgba(210, 255, 213, 0.3);
+        }
+
+        .photo {
+            width: 75px;
+            background: #fff;
+            border-radius: 15%;
+            border: 5px solid cyan;
+            box-shadow: 0 0 20px cyan;
+            margin: 1rem 0;
+        }
+
+        .main {
+            width: 85px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .profile .person {
+            display: flex;
+            margin: 1rem 0;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .profile .person.first {
+            z-index: 3;
+            transform: translateY(-10%);
+        }
+
+        .first .fa-crown {
+            color: gold;
+            filter: drop-shadow(0px 0px 5px gold);
+        }
+
+        .num {
+            color: white;
+        }
+
+        .fa-caret-up {
+            color: cyan;
+            font-size: 21px;
+        }
+
+        .link {
+            margin: 0.2rem 0;
+            color: #fff;
+            margin-top: -0.3rem;
+            font-size: 13px;
+        }
+
+        .points {
+            color: cyan;
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        .second {
+            margin-right: -0.7rem !important;
+        }
+
+        .third {
+            margin-left: -0.7rem !important;
+        }
+
+        .p_img {
+            width: 60px;
+            background: #fff;
+            border-radius: 15%;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .others {
+            display: flex;
+            width: 100%;
+            margin-top: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 30px;
+            background: rgba(210, 255, 213, 0.3);
+        }
+
+        .info .points {
+            margin-left: 0.2rem;
+            margin-right: 1.2rem;
+        }
+
+        .info .link {
+            margin: 0 1rem;
+        }
+
+        .rank {
+            display: flex;
+            align-items: center;
+            margin: 0 1rem;
+            flex-direction: column-reverse;
+        }
+
+        .rank i {
+            margin-top: -5px !important;
+        }
+
+        .rank .num {
+            margin: 0 !important;
+        }
+
+        .logo-text {
+            font-size: 1.17em;
+            font-family: "Josefin Sans", Arial;
+        }
+    </style>
+</head>
+
+<body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+            <h1>
+                <a class="navbar-brand kalasmi" href="index.html">
+                    <img class="img-fluid" width="45" src="assets/images/logo.png" alt=" ">Iemkvan
+                </a>
+            </h1>
+            <!-- if logo is image enable this
+<a class="navbar-brand" href="#index.html">
+<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+</a> -->
+            <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="onStage.html">On Stage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offStage.html">Off Stage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- toggle switch for light and dark theme -->
+            <div class="cont-ser-position " style="margin-top: 10px;">
+                <nav class="navigation">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            <!-- //toggle switch for light and dark theme -->
+        </nav>
+    </div>
+</header>
+<!--//header-->
+
+
+<!-- banner section -->
+<section id="home" class="w3l-banner py-5">
+    <div class="container pt-5 pb-md-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 banner-left pt-md-0 pt-5">
+                <h3 class="navbar-brand kalasmi">Iemkvan</h3><br>
+                <h3 class="mb-sm-4 mb-3 title">Fine Arts Festival <span class="type-js"><span
+                        class="text-js">2023-24</span></span></h3>
+                <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
+                    <a class="btn button-style" href="gallery.html">Gallery<i class="fa fa-angle-double-right"
+                                                                                  aria-hidden="true"></i></a><br>
+                    <a class="btn button-style mt-2" href="onStage.html">On Stage<i class="fa fa-angle-double-right"
+                                                                                  aria-hidden="true"></i></a><br>
+                    <a class="btn button-style mt-2" href="offStage.html">Off Stage<i class="fa fa-angle-double-right"
+                                                                                  aria-hidden="true"></i></a><br>
+                    <a class="btn button-style mt-2" href="#leaderboard">Leaderboard<i class="fa fa-angle-double-down"
+                                                                                  aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 banner-right mt-md-0 mt-4">
+                <img class="img-fluid" src="assets/images/art.png" alt=" ">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
+
+
+<section>
+    <div class="card one" id="leaderboard">
+        <div class="header">
+            <!--<i class="arrow fas fa-chevron-left"></i>-->
+            <h3 class="title">Leaderboard</h3>
+            <div></div>
+        </div>
+        <!--<div class="sort">-->
+        <!--<div class="day">Today</div>-->
+        <!--<div class="day active">Week</div>-->
+        <!--<div class="day">Month</div>-->
+        <!--</div>-->
+        <div class="profile">
+            <div class="person second">
+                <div class="num">2</div>
+                <i class="fas fa-caret-up"></i>
+                <img src="assets/images/falcons.png" alt="" class="photo">
+                <p class="link">Falcons</p>
+                <p class="points">48</p>
+            </div>
+            <div class="person first">
+                <div class="num">1</div>
+                <i class="fas fa-crown"></i>
+                <img src="assets/images/phoenix.png" alt="" class="photo main">
+                <p class="link">Phoenix</p>
+                <p class="points">70</p>
+            </div>
+            <div class="person third">
+                <div class="num">3</div>
+                <i class="fas fa-caret-up"></i>
+                <img src="assets/images/warriors.png" alt="" class="photo">
+                <p class="link">Warriors</p>
+                <p class="points">13</p>
+            </div>
+        </div>
+        <div class="rest">
+            <div class="others flex">
+                <div class="rank">
+                    <i class="fas fa-caret-up"></i>
+                    <p class="num">4</p>
+                </div>
+                <div class="info flex">
+                    <img src="assets/images/titans.png" alt="" class="p_img">
+                    <p class="link">Titans</p>
+                    <p class="points">8</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+<footer class="w3l-footer-22 position-relative mt-5 pt-5">
+    <!-- copyright -->
+    <div class="copyright-footer text-center">
+        <div class="container">
+            <div class="columns">
+                <p>Design by <a href="https://www.bcamcas.in/" target="_blank"> Department of Computer Science</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- //copyright -->
+</footer>
+<!-- //footer -->
+
+<!-- Js scripts -->
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-level-up" aria-hidden="true"></span>
+</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- //move top -->
+
+<!-- common jquery plugin -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- //common jquery plugin -->
+
+<!-- theme switch js (light and dark)-->
+<script src="assets/js/theme-change.js"></script>
+<script>
+    function autoType(elementClass, typingSpeed) {
+        var thhis = $(elementClass);
+        thhis.css({
+            "position": "relative",
+            "display": "inline-block"
+        });
+        thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+        thhis = thhis.find(".text-js");
+        var text = thhis.text().trim().split('');
+        var amntOfChars = text.length;
+        var newString = "";
+        thhis.text("|");
+        setTimeout(function () {
+            thhis.css("opacity", 1);
+            thhis.prev().removeAttr("style");
+            thhis.text("");
+            for (var i = 0; i < amntOfChars; i++) {
+                (function (i, char) {
+                    setTimeout(function () {
+                        newString += char;
+                        thhis.text(newString);
+                    }, i * typingSpeed);
+                })(i + 1, text[i]);
+            }
+        }, 1500);
+    }
+
+    $(document).ready(function () {
+        // Now to start autoTyping just call the autoType function with the
+        // class of outer div
+        // The second paramter is the speed between each letter is typed.
+        autoType(".type-js", 200);
+    });
+</script>
+<!-- //theme switch js (light and dark)-->
+
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+        $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+    });
+</script>
+<!-- //magnific popup -->
+
+<!-- MENU-JS -->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!-- //MENU-JS -->
+
+<!-- for testimonials carousel -->
+<script src="assets/js/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#owl-demo1").owlCarousel({
+            loop: true,
+            margin: 20,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: true
+                }
+            }
+        })
+    })
+</script>
+<!-- //for testimonials carousel -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- //disable body scroll which navbar is in active -->
+
+<!-- counter for stats -->
+<script src="assets/js/counter.js"></script>
+<!-- //counter for stats -->
+
+<!--bootstrap-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- //bootstrap-->
+<!-- //Js scripts -->
+</body>
+
+</html>
